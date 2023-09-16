@@ -7,40 +7,39 @@ library(dplyr)
 B1 <- read.table("C:/Users/User/Desktop/ntu/week2/B1.ReadsPerGene.tsv", sep = "\t",
                   header=TRUE)
 B1 <- rename(B1, GeneID = "V1", B1="V2")
-B2 <- read.table("C:/Users/User/Desktop/ntu/week2/B1.ReadsPerGene.tsv", sep = "\t",
+B2 <- read.table("C:/Users/User/Desktop/ntu/week2/B2.ReadsPerGene.tsv", sep = "\t",
                  header=TRUE)
 B2 <- rename(B2, GeneID = "V1", B2="V2")
-B3 <- read.table("C:/Users/User/Desktop/ntu/week2/B1.ReadsPerGene.tsv", sep = "\t",
+B3 <- read.table("C:/Users/User/Desktop/ntu/week2/B3.ReadsPerGene.tsv", sep = "\t",
                  header=TRUE)
 B3 <- rename(B3, GeneID = "V1", B3="V2")
-B4 <- read.table("C:/Users/User/Desktop/ntu/week2/B1.ReadsPerGene.tsv", sep = "\t",
+B4 <- read.table("C:/Users/User/Desktop/ntu/week2/B4.ReadsPerGene.tsv", sep = "\t",
                  header=TRUE)
 B4 <- rename(B4, GeneID = "V1", B4="V2")
 
-B5 <- read.table("C:/Users/User/Desktop/ntu/week2/B1.ReadsPerGene.tsv", sep = "\t",
+B5 <- read.table("C:/Users/User/Desktop/ntu/week2/B5.ReadsPerGene.tsv", sep = "\t",
                  header=TRUE)
 B5 <- rename(B5, GeneID = "V1", B5="V2")
 
-C1 <- read.table("C:/Users/User/Desktop/ntu/week2/B1.ReadsPerGene.tsv", sep = "\t",
+C1 <- read.table("C:/Users/User/Desktop/ntu/week2/C1.ReadsPerGene.tsv", sep = "\t",
                  header=TRUE)
 C1 <- rename(C1, GeneID = "V1", C1="V2")
 
-C2 <- read.table("C:/Users/User/Desktop/ntu/week2/B1.ReadsPerGene.tsv", sep = "\t",
+C2 <- read.table("C:/Users/User/Desktop/ntu/week2/C2.ReadsPerGene.tsv", sep = "\t",
                  header=TRUE)
 C2 <- rename(C2, GeneID = "V1", C2="V2")
 
-C3 <- read.table("C:/Users/User/Desktop/ntu/week2/B1.ReadsPerGene.tsv", sep = "\t",
+C3 <- read.table("C:/Users/User/Desktop/ntu/week2/C3.ReadsPerGene.tsv", sep = "\t",
                  header=TRUE)
 C3 <- rename(C3, GeneID = "V1", C3="V2")
 
-C4 <- read.table("C:/Users/User/Desktop/ntu/week2/B1.ReadsPerGene.tsv", sep = "\t",
+C4 <- read.table("C:/Users/User/Desktop/ntu/week2/C4.ReadsPerGene.tsv", sep = "\t",
                  header=TRUE)
 C4 <- rename(C4, GeneID = "V1", C4="V2")
 
-C5 <- read.table("C:/Users/User/Desktop/ntu/week2/B1.ReadsPerGene.tsv", sep = "\t",
+C5 <- read.table("C:/Users/User/Desktop/ntu/week2/C5.ReadsPerGene.tsv", sep = "\t",
                  header=TRUE)
 C5 <- rename(C5, GeneID = "V1", C5="V2")
-
 library(magrittr)
 combined_df <- bind_cols(B1, B2, B3, B4, B5, C1, C2, C3, C4, C5)
 cor(B1,B2,method = "spearman")
