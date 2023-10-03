@@ -1,3 +1,6 @@
+# 參考 https://blog.gtwang.org/r/r-pipes-magrittr-package/
+# 參考 https://bookdown.org/tonykuoyj/eloquentr/data-workflow.html#forward-pipe
+# 參考 https://bookdown.org/b08302310/R_learning_notes/%E4%BB%A5-magrittr-%E4%BD%BF%E7%94%A8-pipes.html
 ```R
 install.packages("magrittr")
 library(magrittr)
