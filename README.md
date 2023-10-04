@@ -5,4 +5,5 @@
 # R系列筆記  https://rpubs.com/skydome20/Table
 
 # Posit Cheatsheets  https://rstudio.github.io/cheatsheets/
+# codecadmy R Cheatsheets  https://www.codecademy.com/resources/cheatsheets/language/r
 
