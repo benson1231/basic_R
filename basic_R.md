@@ -31,3 +31,23 @@ function_name(input1, input2, ..., argument1 = ..., argument2 = ...)
 字串整理：stringr  
 資料輸入：readr  
 處理類別變數：forcats  
+
+![截圖 2023-10-08 上午1 41 28](https://github.com/benson1231/basic_R/assets/144930897/4bc40718-111f-469b-95f2-4993364e24e2)
+![截圖 2023-10-08 上午1 38 46](https://github.com/benson1231/basic_R/assets/144930897/d5f9053b-b87c-447c-90aa-86b9cea319fa)
+![截圖 2023-10-08 上午1 39 43](https://github.com/benson1231/basic_R/assets/144930897/d19073db-dc32-4d23-b0d9-5b522495fc19)
+![截圖 2023-10-08 上午1 40 20](https://github.com/benson1231/basic_R/assets/144930897/c4a5a540-1f54-402f-8620-b000f29cfc87)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
