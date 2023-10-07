@@ -5,6 +5,12 @@
 # Script腳本
 表達式Expression:符號結合上下語句，運算並回傳結果  
 陳述式Statement:命令執行一系列操作，但不會回傳結果，通常使用控制結構(條件語句/循環語句)來創建
+# 基本資料型別
+numeric - (10.5, 55, 787)  
+integer - (1L, 55L, 100L, where the letter "L" declares this as an integer)  
+complex - (9 + 3i, where "i" is the imaginary part)  
+character (a.k.a. string) - ("k", "R is exciting", "FALSE", "11.5")  
+logical (a.k.a. boolean) - (TRUE or FALSE)  
 
 # function函式(輸入與參數/主體/輸出)
 function_name(input1, input2, ..., argument1 = ..., argument2 = ...)  
