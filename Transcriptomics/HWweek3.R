@@ -2,10 +2,9 @@
 # 檔案存在/Users/benson/Desktop/Transcriptome/week3/
 data <- read.table("/Users/benson/Desktop/Transcriptome/week3/BRCA_Gene_Expression_profile_FPKM.txt",
                    row.names = 1, header = TRUE) 
-dim(data) # 有10273個基因與1091(1093-2，第一行與1093行為Ensembl ID)個樣本
+dim(data) # 有10273個基因與1091個樣本
 # 額外再新增一個Ensembl ID 的column存放Ensembl ID
-data$Ensembl_ID <- rownames(data)
-data <- data[, c("Ensembl_ID", colnames(data))]
+data <- cbind(Ensembl_ID = rownames(data), data)
 
 ### 1.讀取基因名稱對照表 ID2Name.txt -------------------------------------------
 mapping_table <- read.table("/Users/benson/Desktop/Transcriptome/week3/ID2Name.txt", 
@@ -14,9 +13,9 @@ mapping_table <- read.table("/Users/benson/Desktop/Transcriptome/week3/ID2Name.t
 # 將ID2Name.txt與BRCA_Gene_Expression_profile_FPKM.txt資料以Ensembl_ID去mapping合併
 library(dplyr)
 converted_data <- data %>%
-  left_join(mapping_table, by = c("Ensembl_ID" = "Ensembl_ID")) %>%
-  .[, c("Gene_name", colnames(data))] %>%   # 將Gene_name移到最前面
-  .[,-2]   # 刪除Ensembl_ID column
+  left_join(mapping_table, by = c("Ensembl_ID" = "Ensembl_ID")) %>% 
+  .[,-1]   # 去除Ensembl ID
+
 # 驗證converted_data中是否有重複的Gene_name
 duplicates <- duplicated(converted_data$Gene_name)
 if (any(duplicates)) {
@@ -37,7 +36,7 @@ if (any(duplicates)) {
 } else {
   cat("No duplicates found in the column.")
 }
-dim(new_table) # 有10035個基因與1091(1093-2，第一行與1093行非樣本)個樣本
+dim(new_table) # 有10035個基因與1091(1092-1，最後一行為gene_name)個樣本
 
 ### 2.創造一個check_average_expression function可以數值是否大於一 --------------
 check_average_expression <- function(x) {
@@ -47,8 +46,8 @@ check_average_expression <- function(x) {
 new_table$average_column <- rowMeans(new_table[, -1])
 filtered_genes <- sapply(new_table$average_column, check_average_expression)
 print(filtered_genes)
-more_than_one_data <- new_table[filtered_genes, ]
-dim(more_than_one_data) # 有3560個基因與1091(1093-2，第一行與1093行非樣本)個樣本
+more_than_one_data <- new_table[filtered_genes, -length(new_table)]. # 最後一行是平均，不需要了
+dim(more_than_one_data) # 有3560個基因與1091(1092-1，第一行為gene_name)個樣本
 
 ### 3.Normalization ------------------------------------------------------------
 # 前處理
@@ -64,3 +63,9 @@ Xsample <- medianQ3 / q3_values
 # upper quartile normalization
 nor_data <- pre_nor_data %>%
   mutate(across(everything(), ~ . * Xsample[match(cur_column(), colnames(pre_nor_data))]))
+
+
+
+
+
+
