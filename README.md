@@ -4,6 +4,7 @@
 # R 資料科學與統計  https://bookdown.org/jefflinmd38/r4biost/
 # R系列筆記  https://rpubs.com/skydome20/Table
 # https://ourcodingclub.github.io/tutorials.html 
+# R for Data Science  https://r4ds.had.co.nz/index.html
 
 # Posit Cheatsheets  https://rstudio.github.io/cheatsheets/
 # codecadmy R Cheatsheets  https://www.codecademy.com/resources/cheatsheets/language/r
