@@ -5,6 +5,9 @@
 # R系列筆記  https://rpubs.com/skydome20/Table
 # https://ourcodingclub.github.io/tutorials.html 
 # R for Data Science  https://r4ds.had.co.nz/index.html
+# Advanced R  https://adv-r.hadley.nz/index.html
+# Quick list of useful R packages  https://support.posit.co/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages
+# CRAN Task Views  https://cran.r-project.org/web/views/
 
 # Posit Cheatsheets  https://rstudio.github.io/cheatsheets/
 # codecadmy R Cheatsheets  https://www.codecademy.com/resources/cheatsheets/language/r
