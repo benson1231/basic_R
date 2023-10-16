@@ -4,7 +4,7 @@
 # Advanced R by Hadley Wickham  http://adv-r.had.co.nz/Data-structures.html
 # R 資料科學與統計  https://bookdown.org/jefflinmd38/r4biost/
 # R系列筆記  https://rpubs.com/skydome20/Table
-# https://ourcodingclub.github.io/tutorials.html 
+# ourcodingclub  https://ourcodingclub.github.io/tutorials.html 
 # R for Data Science  https://r4ds.had.co.nz/index.html
 # Advanced R  https://adv-r.hadley.nz/index.html
 # Quick list of useful R packages  https://support.posit.co/hc/en-us/articles/201057987-Quick-list-of-useful-R-packages
