@@ -1,4 +1,5 @@
 # R 學習筆記  https://bookdown.org/b08302310/R_learning_notes/
+# R bookdown教學  https://bookdown.org/yihui/bookdown/
 # Hands-On Programming with R  https://rstudio-education.github.io/hopr/
 # Advanced R by Hadley Wickham  http://adv-r.had.co.nz/Data-structures.html
 # R 資料科學與統計  https://bookdown.org/jefflinmd38/r4biost/
