@@ -7,11 +7,14 @@
 Sys.getenv()
 ```
 # 更改R環境變數(use command line)
+```
 nano /Users/benson/.Renviron 
+```
 # 增加下面資訊
+```
 R_LIBS_USER=/Users/benson/Documents/code/r_package
 mkdir -p /Users/benson/Documents/code/r_package
-
+```
 # Script腳本
 表達式Expression:符號結合上下語句，運算並回傳結果  
 陳述式Statement:命令執行一系列操作，但不會回傳結果，通常使用控制結構(條件語句/循環語句)來創建
